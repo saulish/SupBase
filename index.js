@@ -16,6 +16,9 @@ async function fetchData() {
     }
 
     document.getElementById('data').textContent = JSON.stringify(data, null, 2);
+    data.array.forEach(element => {
+      console.log(element.nombre)
+    });
 }
 
 fetchData();

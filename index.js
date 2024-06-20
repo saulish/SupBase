@@ -1,7 +1,7 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
-const supabaseUrl = 'https://tu-proyecto.supabase.co';
-const supabaseKey = 'tu-clave-anonima';
+const supabaseUrl = 'https://scjutjfmtifixygfcqln.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNjanV0amZtdGlmaXh5Z2ZjcWxuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg4MTk0MjAsImV4cCI6MjAzNDM5NTQyMH0.2Ykbhu1rfYJueuuFVlzKlvwzozAgQwxMxHO_rKkTLKE';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function fetchData() {

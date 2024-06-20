@@ -6,7 +6,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function fetchData() {
     const { data, error } = await supabase
-        .from('tabla')
+        .from('Datos')
         .select('*');
 
     if (error) {

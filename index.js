@@ -14,12 +14,14 @@ async function fetchData() {
         document.getElementById('data').textContent = 'Error al obtener datos';
         return;
     }
-
+    console.log(data)
     const datos=JSON.stringify(data, null, 2);
-    document.getElementById('data').textContent = data;
+    document.getElementById('data').textContent = datos;
 
-    data.array.forEach(element => {
+    data.forEach(element => {
+      console.log(element.id)
       console.log(element.nombre)
+
     });
 }
 

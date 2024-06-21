@@ -15,7 +15,7 @@ async function fetchData() {
         return;
     }
 
-    datos=JSON.stringify(data, null, 2);
+    const datos=JSON.stringify(data, null, 2);
     document.getElementById('data').textContent = data;
 
     data.array.forEach(element => {
